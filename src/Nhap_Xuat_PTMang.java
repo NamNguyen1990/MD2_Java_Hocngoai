@@ -12,8 +12,10 @@ public class Nhap_Xuat_PTMang {
             System.out.println("Nhập vào phần tử thứ" + i + ":");
             mang[i] = scanner.nextInt(); // Nhập phần tử cho mảng
         }
+
+        System.out.println("Mảng vừa nhập vào là:");
         for (int i=0; i<size; i++) {
-            System.out.println(mang[i]); // In ra mảng nhập vào
+            System.out.print(mang[i] + "\t"); // In ra mảng nhập vào
         }
     }
 }
