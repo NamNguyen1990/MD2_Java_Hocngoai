@@ -1,6 +1,7 @@
 package QLSV2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class QuanLySinhVien {
@@ -85,5 +86,9 @@ public class QuanLySinhVien {
             System.out.println(sinhvienList.get(i));
         }
         System.out.println("-------------------------------");
+    }
+
+    void xapXeptuoi() {
+        Collections.sort(this.sinhvienList);
     }
 }

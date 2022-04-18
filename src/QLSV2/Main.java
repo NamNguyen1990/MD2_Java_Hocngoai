@@ -14,6 +14,9 @@ public class Main {
         System.out.println(quanLySinhVien.timKiemten("Nam")); // tìm kiếm theo tên
         System.out.println(quanLySinhVien.timKiemID(15));  // tìm kiếm theo id
 
+        quanLySinhVien.xapXeptuoi();
+        quanLySinhVien.hienthi();
+
         quanLySinhVien.suaten("Vy",new Sinhvien(20,"Vy",6));  // sửa theo tên
         quanLySinhVien.hienthi();
         quanLySinhVien.suaid(10, new Sinhvien(15,"Nam",232));
