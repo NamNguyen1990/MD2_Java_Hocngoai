@@ -1,6 +1,6 @@
 package QuanLyKP;
 
-public class Main {
+public class MainHoGD {
     public static void main(String[] args) {
         HoGiaDinh hoGiaDinh1 = new HoGiaDinh();
 
@@ -26,6 +26,20 @@ public class Main {
 
         hoGiaDinh2.xoaten("Hường");
         hoGiaDinh2.hienThi();
+
+
+        HoGiaDinh hoGiaDinh3 = new HoGiaDinh();
+        hoGiaDinh3.them(new Nguoi("Hồng",25,"Tuyển dụng",12456));
+        hoGiaDinh3.them(new Nguoi("Lâm",28,"Lái xe Taxi",54785));
+        hoGiaDinh3.setDiaChi("Hà Cầu - Hà Đông");
+        HoGiaDinh hoGiaDinh4 = new HoGiaDinh();
+        hoGiaDinh4.them(new Nguoi("Thái",45,"Sửa xe",54879));
+        hoGiaDinh4.them(new Nguoi("Hòa",42,"Giáo viên",98632));
+        hoGiaDinh4.setDiaChi("Xa La - Hà Đông");
+        KhuPho khupho = new KhuPho();
+        khupho.them(hoGiaDinh3);
+        khupho.them(hoGiaDinh4);
+        khupho.hienThi();
 
     }
 }
