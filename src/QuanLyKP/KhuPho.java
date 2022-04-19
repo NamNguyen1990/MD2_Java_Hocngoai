@@ -35,5 +35,16 @@ public class KhuPho {
     // Hoặc dùng for ex       for (HoGiaDinh hoGiaDinh : khuPho) {
     //                             hoGiaDinh.hienThi();
     //                              }
+
+    public int timKiemdiaChi (String diaChi) {
+        for (int i=0; i< khuPho.size(); i++) {
+            if (khuPho.get(i).getDiaChi().equals(diaChi)) {   // do tìm theo tên kiểu String nên phải dùng equals.
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
 }
 

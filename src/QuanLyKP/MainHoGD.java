@@ -41,5 +41,7 @@ public class MainHoGD {
         khupho.them(hoGiaDinh4);
         khupho.hienThi();
 
+
+
     }
 }
