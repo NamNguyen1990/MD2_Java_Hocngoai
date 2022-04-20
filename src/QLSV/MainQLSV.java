@@ -45,7 +45,7 @@ public class MainQLSV {
                 System.out.println("Mời nhập tên SV cần tìm:");
                 String ten;
                 ten = nhapChu.nextLine();
-                System.out.println(quanLySinhVien.timKiem(ten));;
+                System.out.println(quanLySinhVien.timKiem(ten));
 
             }
             else if (luaChon == 5) {

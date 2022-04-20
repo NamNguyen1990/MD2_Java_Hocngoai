@@ -55,6 +55,14 @@ public class HoGiaDinh {
         return -1;
     }
 
+    public void timKiemten1 (String ten) {  // Tìm theo tên đúng thì hiển thị ra thông tin
+        for (int i=0; i< giaDinh.size(); i++) {
+            if (giaDinh.get(i).getTen().equals(ten)) {
+                System.out.println(giaDinh.get(i));;
+            }
+        }
+    }
+
     public void hienThi() {
         System.out.println("Danh sách hộ gia đình:");
         for (int i=0; i<giaDinh.size();i++) {

@@ -18,7 +18,9 @@ public class MainHoGD {
         hoGiaDinh2.setDiaChi("Đa Sỹ - Hà Đông");
         hoGiaDinh2.hienThi();
 
-        System.out.println(hoGiaDinh1.timKiemten("Nam"));
+        System.out.println(hoGiaDinh1.timKiemten("Linh"));
+        hoGiaDinh1.timKiemten1("Linh");
+        hoGiaDinh1.timKiemten1("Nam");
 
         hoGiaDinh2.suaten("Công",new Nguoi("Công",25,"Nhân viên văn phòng",98715));
         hoGiaDinh2.suaten("Đại",new Nguoi("Công",27,"Nhân viên văn phòng",92215));  // Thử điền sai tên
