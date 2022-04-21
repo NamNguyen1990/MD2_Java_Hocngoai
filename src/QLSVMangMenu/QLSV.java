@@ -6,35 +6,36 @@ import java.util.List;
 
 public class QLSV {
     List<Sinhvien> sinhvienList = new ArrayList<>();
-    void them (Sinhvien sinhvien) {
+
+    void them(Sinhvien sinhvien) {
         sinhvienList.add(sinhvien);
 
     }
-   public int slSV () {
+
+    public int slSV() {
         return sinhvienList.size();
     }
-    void suaten (String ten, Sinhvien sinhvien) {
+
+    public void suaten(String ten, Sinhvien sinhvien) {
         int indexOf = timKiemten1(ten);
         if (indexOf == -1) {
             System.out.println("Không có sinh viên này");
-        }
-        else {
-            sinhvienList.set(indexOf,sinhvien);
+        } else {
+            sinhvienList.set(indexOf, sinhvien);
         }
     }
 
-    void xoaten (String ten) {
+    void xoaten(String ten) {
         int indexOf = timKiemten1(ten);
         if (indexOf == -1) {
             System.out.println("Không có sinh viên này");
-        }
-        else {
+        } else {
             sinhvienList.remove(indexOf);
         }
     }
 
-    public void timKiemten (String ten) {
-        for (int i=0;i<sinhvienList.size();i++) {
+    public void timKiemten(String ten) {
+        for (int i = 0; i < sinhvienList.size(); i++) {
             if (sinhvienList.get(i).getTen().equals(ten)) {
                 System.out.println(sinhvienList.get(i));
             }
@@ -44,8 +45,8 @@ public class QLSV {
         }
     }
 
-    public int timKiemten1 (String ten) {
-        for (int i=0;i<sinhvienList.size();i++) {
+    public int timKiemten1(String ten) {
+        for (int i = 0; i < sinhvienList.size(); i++) {
             if (sinhvienList.get(i).getTen().equals(ten)) {
                 return i;
             }
@@ -54,7 +55,7 @@ public class QLSV {
     }
 
     public void timKiemmaSV(int maSV) {
-        for (int i=0;i<sinhvienList.size();i++) {
+        for (int i = 0; i < sinhvienList.size(); i++) {
             if (sinhvienList.get(i).getMaSV() == maSV) {
                 System.out.println(sinhvienList.get(i));
             }
@@ -64,8 +65,8 @@ public class QLSV {
         }
     }
 
-    void hienThi () {
-        for (int i=0;i<sinhvienList.size();i++) {
+    void hienThi() {
+        for (int i = 0; i < sinhvienList.size(); i++) {
             System.out.println(sinhvienList.get(i));
         }
     }

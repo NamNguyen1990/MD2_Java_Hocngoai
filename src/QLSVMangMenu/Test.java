@@ -8,7 +8,7 @@ public class Test {
         Scanner sc = new Scanner(System.in);
         Scanner nhapChu = new Scanner(System.in);
         int luaChon;
-        System.out.println("Menu");
+        System.out.println("=====Menu====");
         System.out.println("0 - Thoát khỏi chương trình");
         System.out.println("1 - Thêm 1 sinh viên");
         System.out.println("2 - Hiển thị số lượng sinh viên");
@@ -58,13 +58,11 @@ public class Test {
                 System.out.println("Nhập điểm mới cho sinh viên");
                 int diemSVM = sc.nextInt();
                 Sinhvien sinhvien1 = new Sinhvien(maSVM,tenSVM,tuoiSVM,namSinhSVM,diemSVM);
-
-                qlsv.xoaten(tenSVS);
-                qlsv.them(sinhvien1);
-                qlsv.hienThi();
+                qlsv.suaten(tenSVS,sinhvien1);
+//                qlsv.xoaten(tenSVS);
+//                qlsv.them(sinhvien1);
+//                qlsv.hienThi();
 //              System.out.println(qlsv.timKiemten1(tenSVS));
-
-
 
             }
             else if (luaChon == 4) {
@@ -79,8 +77,8 @@ public class Test {
                 System.out.println("Mời nhập tên SV cần tìm:");
                 String ten;
                 ten = nhapChu.nextLine();
-                qlsv.timKiemten(ten);
-//              System.out.println(qlsv.timKiemten1(ten));
+//                qlsv.timKiemten(ten);
+              System.out.println(qlsv.timKiemten1(ten));
 
             }
             else if (luaChon == 6) {
