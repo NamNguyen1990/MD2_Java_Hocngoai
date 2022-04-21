@@ -40,9 +40,9 @@ public class Main {
 
             }
             else if (luaChon1 == 3) {
-                System.out.println("Sửa tên đăng nhập thành");
+                System.out.println("Nhập lại tên đăng nhập cũ");
                 String tenDNS = nhapChu.nextLine();
-                System.out.println("Sửa mật khẩu đăng nhập thành");
+                System.out.println("Nhập lại mật khẩu cũ");
                 String matkhauDNS = nhapChu.nextLine();
                 System.out.println(quanLyDKDN.timKiemten(tenDNS,matkhauDNS));
 
