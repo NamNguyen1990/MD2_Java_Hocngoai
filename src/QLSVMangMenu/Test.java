@@ -77,8 +77,8 @@ public class Test {
                 System.out.println("Mời nhập tên SV cần tìm:");
                 String ten;
                 ten = nhapChu.nextLine();
-//                qlsv.timKiemten(ten);
-              System.out.println(qlsv.timKiemten1(ten));
+                qlsv.timKiemten(ten);
+//              System.out.println(qlsv.timKiemten1(ten));
 
             }
             else if (luaChon == 6) {
