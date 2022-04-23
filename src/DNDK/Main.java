@@ -15,10 +15,16 @@ public class Main {
         System.out.println("3 - Sửa thông tin tài khoản");
         System.out.println("4 - Xem thông tin tài khoản");
         System.out.println("5 - Xem lại Menu");
+
         do {
             System.out.println("Mời bạn chọn chức năng");
-            luaChon1 = sc.nextInt();
-
+            try {
+                luaChon1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Chỉ được nhập số");
+                sc.nextLine();
+                luaChon1 = -1;
+            }
             if (luaChon1 == 1) {
                 System.out.println("Nhập tên đăng ký");
                 String tenDK = nhapChu.nextLine();
@@ -28,6 +34,8 @@ public class Main {
 
                 DKDN dkdn = new DKDN(tenDK,matkhauDK);
                 quanLyDKDN.them(dkdn);
+
+                
 
 
             }
@@ -44,9 +52,15 @@ public class Main {
                 String tenDNS = nhapChu.nextLine();
                 System.out.println("Nhập lại mật khẩu cũ");
                 String matkhauDNS = nhapChu.nextLine();
-                System.out.println(quanLyDKDN.timKiemten(tenDNS,matkhauDNS));
+                System.out.println("Nhập tên đăng nhập mới");
+                String tenDNM = nhapChu.nextLine();
+                System.out.println("Nhập mật khẩu mới");
+                String matkhauDNM = nhapChu.nextLine();
 
+                DKDN dkdn1 = new DKDN(tenDNM,matkhauDNM);
+                quanLyDKDN.suaten(tenDNS,matkhauDNS,dkdn1);
 
+//              System.out.println(quanLyDKDN.timKiemten(tenDNS,matkhauDNS));
 
             }
             else if (luaChon1 == 4) {

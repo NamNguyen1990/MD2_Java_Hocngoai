@@ -18,8 +18,13 @@ public class MainQLSV {
         System.out.println("6 - Hiển thị danh sách sinh viên");
         do{
             System.out.println("Mời nhập lựa chọn");
-            luaChon = sc.nextInt();
-
+            try {
+                luaChon = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Chỉ được nhập số");
+                sc.nextLine();
+                luaChon = -1;
+            }
             if (luaChon == 1) {
                 System.out.println("Nhập mã sinh viên");
                 int maSV = sc.nextInt();

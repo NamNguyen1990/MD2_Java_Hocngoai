@@ -35,13 +35,15 @@ public class QLSV {
     }
 
     public void timKiemten(String ten) {
+        boolean check = false;
         for (int i = 0; i < sinhvienList.size(); i++) {
             if (sinhvienList.get(i).getTen().equals(ten)) {
                 System.out.println(sinhvienList.get(i));
+                check = true;
             }
-            if (sinhvienList.get(i).getTen().equals(ten) == false) {
-                System.out.println("Không có sinh viên có tên như trên");
-            }
+        }
+        if (check == false) {
+            System.out.println("Không có tên sinh viên nào như trên");
         }
     }
 
@@ -55,19 +57,29 @@ public class QLSV {
     }
 
     public void timKiemmaSV(int maSV) {
+        boolean check = false;
         for (int i = 0; i < sinhvienList.size(); i++) {
             if (sinhvienList.get(i).getMaSV() == maSV) {
                 System.out.println(sinhvienList.get(i));
+                check = true;
             }
-            if (sinhvienList.get(i).getMaSV() != maSV) {
-                System.out.println("Không có mã SV nào như trên");
-            }
+//            if (sinhvienList.get(i).getMaSV() != maSV) {
+//                System.out.println("Không có mã SV nào như trên");
+//            }
+        }
+        if (check == false) {
+            System.out.println("Không có mã sinh viên nào như trên");
         }
     }
 
     void hienThi() {
+        boolean check = false;
         for (int i = 0; i < sinhvienList.size(); i++) {
             System.out.println(sinhvienList.get(i));
+            check = true;
+        }
+        if (check == false){
+            System.out.println("Danh sách chưa có sinh viên nào. Mời bạn nhập!");
         }
     }
 

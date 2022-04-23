@@ -37,6 +37,16 @@ public class QuanLyDKDN {
         return -1;
     }
 
+    public void suaten(String ten, String matkhau, DKDN dkdn) {
+        int indexOf = timKiemten(ten,matkhau);
+        if (indexOf == -1) {
+            System.out.println("Nhập sai tài khoản đăng ký cũ");
+        } else {
+            dkdnList.set(timKiemten(ten,matkhau), dkdn);
+            System.out.println("Mật khẩu đã được đổi thành công");
+        }
+    }
+
 
 
 }

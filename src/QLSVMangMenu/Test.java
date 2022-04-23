@@ -22,7 +22,14 @@ public class Test {
         do {
             System.out.println("Mời bạn chọn chức năng");
             System.out.println("Note: Nhấn 9 để xem lại Menu");
-            luaChon = sc.nextInt();
+
+            try {
+                luaChon = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Chỉ được nhập số");
+                sc.nextLine();
+                luaChon = -1;
+            }
 
             if (luaChon == 1) {
                 System.out.println("Nhập mã sinh viên");
@@ -69,8 +76,7 @@ public class Test {
                 System.out.println("Mời nhập tên sinh viên muốn xóa");
                 String tenSVX = nhapChu.nextLine();
                 qlsv.xoaten(tenSVX);
-                System.out.println("Danh sách sinh viên mới là:");
-                qlsv.hienThi();
+                System.out.println("Sinh viên trên đã bị xóa khỏi danh sách");
 
             }
             else if (luaChon == 5) {
