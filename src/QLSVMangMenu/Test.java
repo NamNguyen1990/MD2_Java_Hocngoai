@@ -34,6 +34,9 @@ public class Test {
             if (luaChon == 1) {
                 System.out.println("Nhập mã sinh viên");
                 int maSV = sc.nextInt();
+
+
+                
                 System.out.println("Nhập tên sinh viên");
                 String tenSV = nhapChu.nextLine();
                 System.out.println("Nhập tuổi sinh viên");

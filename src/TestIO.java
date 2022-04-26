@@ -3,15 +3,21 @@ import java.io.IOException;
 
 public class TestIO {
     public static void main(String[] args) throws IOException {
-        File file = new File("D:\\CodeGym\\Modul 2_1\\Java\\Hocngoai\\Text1.txt");
-        if (file.isFile()) {
+        File file = new File("text1.txt");
+        if (file.exists()) {
+            System.out.println("Đã tồn tại File" + file.getAbsolutePath());
 //            file.delete();
-            System.out.println("Đây là File Text" + file.getAbsolutePath());
+            System.exit(0);
         }
         else {
-            System.out.println("Đây không không phải là File");
+            System.out.println("Chưa tồn tại File");
             file.createNewFile();
-
         }
+        java.io.PrintWriter output = new java.io.PrintWriter(file);  // Chỉ ghi khi file chưa tồn tại
+
+
+        output.print("Hello");
+        output.close();
+
     }
 }
