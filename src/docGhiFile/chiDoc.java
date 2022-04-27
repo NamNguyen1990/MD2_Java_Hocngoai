@@ -1,4 +1,4 @@
-package testFile;
+package docGhiFile;
 
 import java.io.File;
 
