@@ -29,6 +29,7 @@ public class KhuPho {
         System.out.println("Danh sách các hộ gia đình: ");
         for (int i=0; i<khuPho.size();i++) {
             System.out.println(khuPho.get(i).giaDinh);
+            System.out.println("Địa chỉ: " + khuPho.get(i).getDiaChi() +"      " + "Số lượng thành viên: " + khuPho.get(i).getSoThanhvien());
         }
         System.out.println("------------------------------------------------------------");
     }
